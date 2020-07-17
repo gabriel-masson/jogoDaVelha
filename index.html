@@ -4,16 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git and gitHub</title>
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="css/style.css">
+     
 </head>
 
 <body>
-    <h1>oimundo</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Quis, obcaecati corrupti odit sunt, reprehenderit consequuntur temporibus illo,
-        minus possimus quas esse praesentium rem doloremque voluptates culpa architecto
-        sequi. Quas, corporis!</p>
+    <h1>jogo da velha</h1>
+    <div id="buttom-container">
+        <button id="2-players">2 jogadores</button>
+        <button id="ai-player">jogar contra AI</button>
+    </div>
+
+    <!--essa class hide vai ter um css que vai esconder quando remover e aparecer quando add-->
+    <div id="conteiner" class="hide">
+        <!--div para cada quadrado do jogo-->
+        <div class="box" id="block-1"></div>
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+        <!--placar-->
+        <div id="scoreboard-container">
+            <!--
+                placar do x e do O
+            -->
+            <span class="score-box">
+                <span id="x-scoreboard">X</span>:
+                <span id="scoreboard-1">0</span>
+            </span>
+
+            <span class="score-box">
+                <span id="o-scoreboard"></span>:
+                <span id="scoreboard-2">0</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="hide">
+        <!--mesma ideia do de cima sera responsavel para preencher o bloco na hora que vc jogar-->
+        <div class="x">X</div>
+        <div class="o"></div>
+    </div>
+
+    <div id="message" class="hide">
+        <p></p>
+    </div>
+    
+
+<!--    l   .   -->
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
