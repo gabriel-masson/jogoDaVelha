@@ -1,1 +1,50 @@
-/*oi*/
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 42px;
+}
+/*botoes*/
+#buttons-container button{
+    border: none;
+    padding: 10px 15px;
+    margin: 0 15px;
+} 
+
+/*jogo*/
+#conteiner{
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;/*direção linha garante que o 1 2 3 fique na mesma linha*/
+    flex-wrap: wrap;/*isso faz quebrar a linha para fixar 3 em 3*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    height: 100px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+/*tirando a borda*/
+#block-1, #block-2,#block-3{
+    border-top: none;
+}
+
+#block-1, #block-4,#block-7 {
+    border-left: none;
+}
+
+#block-7, #block-8,#block-9{
+    border-bottom: none;
+}
+
+#block-3, #block-6,#block-9{
+    border-right: none;
+}
+/*<!--    l   .   -->*/
