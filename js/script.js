@@ -242,7 +242,7 @@ function computerPlay() {
 
     for (var i = 0; i < boxes.length; i++) {
         var randomNumber = Math.floor(Math.random() * 5)
-        console.log(randomNumber)
+         
         if (boxes[i].childNodes[0] == undefined) {
             if (randomNumber <= 1) {
                 boxes[i].appendChild(cloneO)
